@@ -21,13 +21,49 @@ p {
 
 .black-icon {
   color: rgb(32, 36, 41);
-  margin-right: 10px;
+  margin: 0px 5px 0px 5px;
+}
+
+.red-icon:hover {
+  color: red;
+}
+
+.orange-icon:hover {
+  color: orange;
+}
+
+.green-icon:hover {
+  color: green;
+}
+
+.blue-icon:hover {
+  color: dodgerblue;
 }
 
 .link-colour {
   color: black;
   font-weight: 700;
   text-decoration: underline;
+}
+
+.link-colour-red:hover {
+  color: red;
+}
+
+.link-colour-orange:hover {
+  color: orange;
+}
+
+.link-colour-green:hover {
+  color: green;
+}
+
+.link-colour-blue:hover {
+  color: dodgerblue;
+}
+
+.link-colour-purple:hover {
+  color: purple;
 }
 
 .tooltip {

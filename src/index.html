@@ -47,13 +47,49 @@
 
       .black-icon {
         color: rgb(32, 36, 41);
-        margin-right: 10px;
+        margin: 0px 5px 0px 5px;
+      }
+
+      .red-icon:hover {
+        color: red;
+      }
+
+      .orange-icon:hover {
+        color: orange;
+      }
+
+      .green-icon:hover {
+        color: green;
+      }
+
+      .blue-icon:hover {
+        color: dodgerblue;
       }
 
       .link-colour {
         color: black;
         font-weight: 700;
         text-decoration: underline;
+      }
+
+      .link-colour-red:hover {
+        color: red;
+      }
+
+      .link-colour-orange:hover {
+        color: orange;
+      }
+
+      .link-colour-green:hover {
+        color: green;
+      }
+
+      .link-colour-blue:hover {
+        color: dodgerblue;
+      }
+
+      .link-colour-purple:hover {
+        color: purple;
       }
     </style>
 
@@ -84,12 +120,12 @@
               strings: [
                 "is a developer and a UWaterloo CS Student",
                 "is pronounced Doo-nya Tom-ik",
-                "likes board games and eating pizza",
-                "is looking for an internship",
+                "likes board games and pizza",
+                "is looking for a Winter 2021 internship",
                 "is done speaking in the third person: Hire me",
               ],
               typeSpeed: 70,
-              backDelay: 1300,
+              backDelay: 1500,
               backSpeed: 50,
               smartBackspace: true,
             };
@@ -130,23 +166,27 @@
 
         <!-- Contact Icons -->
         <div
-          class="col-md align-items-center justify-content-center d-flex mx-auto"
+          class="col-md align-items-center justify-content-space-evenly d-flex mx-auto"
         >
           <!-- Email -->
           <a
-            class="icon-link black-icon"
+            class="icon-link black-icon red-icon"
             href="mailto:dunja.tomic@uwaterloo.ca?subject=Hello"
             target="_blank"
           >
             <i class="far fa-envelope fa-2x"></i>
           </a>
-          <!-- Resume -->
-          <a class="icon-link black-icon" href="resume.pdf" target="_blank">
+          <!-- CV -->
+          <a
+            class="icon-link black-icon orange-icon"
+            href="CV.pdf"
+            target="_blank"
+          >
             <i class="fas fa-file-alt fa-2x"></i>
           </a>
           <!-- LinkedIn -->
           <a
-            class="icon-link black-icon"
+            class="icon-link black-icon green-icon"
             href="https://www.linkedin.com/in/dunja-tomic/"
             target="_blank"
           >
@@ -154,7 +194,7 @@
           </a>
           <!-- GitHub -->
           <a
-            class="icon-link black-icon"
+            class="icon-link black-icon blue-icon"
             href="https://github.com/dunja-tomic"
             target="_blank"
           >
@@ -165,30 +205,39 @@
         <!-- About -->
         <div class="row my-5 py-5 d-flex align-items-center">
           <div class="col-md-4 text-center">
-            <img src="images/headshot.png" class="img-fluid" />
+            <img src="images/bike.png" class="img-fluid" />
           </div>
           <div class="col-md">
-            <h3 style="color: red;">
-              Hello World
-            </h3>
+            <h3 style="color: red">Hello World</h3>
             <p>
               I'm Dunja! I'm a third year Computer Science student at the
               <a
                 href="https://uwaterloo.ca/"
-                class="link-colour"
+                class="link-colour link-colour-red"
                 target="_blank"
                 >University of Waterloo</a
               >
               in Waterloo, Canada.
             </p>
             <p>
-              I love all things web development, emerging tech, and
+              I love all things web development, the outdoors, and
               self-improvement. I enjoy participating in hackathons and working
               on meaningful and inventive side projects. I also like board
               games, podcasts, cooking, and the Oxford comma.
             </p>
-            <p>
+            <!-- <p>
               More than anything, I love trying new things and being challenged.
+            </p> -->
+            <p>
+              I'm currently trying to build my web development portfolio - shoot
+              me a message if you're in need of a website!
+              <a
+                href="https://www.claudiaandalexa.ca/"
+                class="link-colour link-colour-red"
+                target="_blank"
+              >
+                Here's another one I created.</a
+              >
             </p>
           </div>
         </div>
@@ -198,29 +247,32 @@
           class="row my-5 py-5 flex-column-reverse flex-md-row d-flex align-items-center"
         >
           <div class="col-md">
-            <h3 style="color: orange;">
-              Previous Internships
-            </h3>
+            <h3 style="color: orange">Previous Internships</h3>
             <p>
-              This summer, I'll be working at
+              This summer, I worked at
               <a
                 href="https://squareup.com/ca/en"
-                class="link-colour"
+                class="link-colour link-colour-orange"
                 target="_blank"
               >
                 Square</a
               >
-              in Kitchener, where I'll be an Android developer on the
-              <a href="https://cash.app/" class="link-colour" target="_blank">
+              in Kitchener, where I was an Android developer on
+              <a
+                href="https://cash.app/"
+                class="link-colour link-colour-orange"
+                target="_blank"
+              >
                 Cash App</a
               >
-              team.
+              . I'd never done any mobile development at that point, so it was a
+              great learning experience.
             </p>
             <p>
               This past fall, I was a software engineering intern at
               <a
                 href="https://www.accenture.com/ca-en/services/technology/liquid-studios"
-                class="link-colour"
+                class="link-colour link-colour-orange"
                 target="_blank"
               >
                 Accenture</a
@@ -233,7 +285,7 @@
               The winter before that I interned as a full stack developer at
               <a
                 href="https://www.hyalto.com/"
-                class="link-colour"
+                class="link-colour link-colour-orange"
                 target="_blank"
                 >Hyalto</a
               >
@@ -243,12 +295,13 @@
               I did my very first co-op term at
               <a
                 href="https://www.loyalty.com/"
-                class="link-colour"
+                class="link-colour link-colour-orange"
                 target="_blank"
                 >LoyaltyOne</a
               >
-              in Toronto, Canada where I worked as a service desk
-              representative.
+              in Toronto, Canada where I worked as a service desk representative
+              and "have you tried turning it off and on again?" was a large part
+              of my vocabulary.
             </p>
           </div>
           <div class="col-md text-center">
@@ -262,14 +315,12 @@
             <img src="images/thegoldenhack.png" class="img-fluid" />
           </div>
           <div class="col-md">
-            <h3 style="color: green;">
-              The GoldenHack
-            </h3>
+            <h3 style="color: green">The GoldenHack</h3>
             <p>
               I am the Vice President of Technology for
               <a
                 href="https://www.thegoldenhack.ca/"
-                class="link-colour"
+                class="link-colour link-colour-green"
                 target="_blank"
                 >The GoldenHack</a
               >, a business hackathon based out of Wilfrid Laurier University in
@@ -278,12 +329,12 @@
             <p>
               The hackathon had its inaugural event in October 2019 and it was a
               huge success. We had over 150 participants who all gave
-              overwhelmingly positive feedback on the event.
+              overwhelmingly positive feedback of the event.
             </p>
             <p>
-              This year, I'm leading a team of 6 developers & designers in
-              building out a new version of the website for the event, and our
-              very own application system. The whole team is incredibly
+              This year, I'm leading an interdisciplinary team of 6 in building
+              a new version of the website for the event, and an applicant
+              dashboard and application portal. The whole team is incredibly
               talented, and I can't wait to see what we accomplish this year.
             </p>
           </div>
@@ -294,15 +345,13 @@
           class="row my-5 py-5 flex-column-reverse flex-md-row d-flex align-items-center"
         >
           <div class="col-md">
-            <h3 style="color: dodgerblue;">
-              Volunteering
-            </h3>
+            <h3 style="color: dodgerblue">Volunteering</h3>
             <p>
               In my spare time, I strive to be an active and positive member of
-              my community. This fall, I started volunteering with the
+              my community. Last fall, I started volunteering with the
               <a
                 href="https://www.girlguides.ca/web/"
-                class="link-colour"
+                class="link-colour link-colour-blue"
                 target="_blank"
                 >Girl Guides of Canada</a
               >
@@ -315,7 +364,7 @@
               St. Alban's Boys and Girls Club for a great program called
               <a
                 href="http://www.stalbansclub.ca/rtg"
-                class="link-colour"
+                class="link-colour link-colour-blue"
                 target="_blank"
                 >Raise the Grade</a
               >
@@ -333,38 +382,36 @@
             <img src="images/travel.png" class="img-fluid" />
           </div>
           <div class="col-md">
-            <h3 style="color: purple;">
-              Fun Stuff
-            </h3>
+            <h3 style="color: purple">Fun Stuff</h3>
             <p>
-              I love to travel! Here are a couple snaps for my latest family
-              trip to Hawaii.
+              I love to travel! Here are a couple snaps of my latest family trip
+              to Hawaii.
             </p>
             <p>
               I also love podcasts so much I decided to join one. Listen to me
               speak about nerdy space stuff on episodes
               <a
                 href="https://starspotpodcast.com/2019/11/10/discovering-ancient-oasis/"
-                class="link-colour"
+                class="link-colour link-colour-purple"
                 target="_blank"
                 >173</a
               >,
               <a
                 href="https://starspotpodcast.com/2019/11/24/fuzzy-dark-matter/"
-                class="link-colour"
+                class="link-colour link-colour-purple"
                 target="_blank"
                 >174</a
               >, and
               <a
                 href="https://starspotpodcast.com/2019/12/22/the-truth-is-out-there-at-the-university-of-manitoba/"
-                class="link-colour"
+                class="link-colour link-colour-purple"
                 target="_blank"
                 >175</a
               >
               of
               <a
                 href="https://starspotpodcast.com"
-                class="link-colour"
+                class="link-colour link-colour-purple"
                 target="_blank"
                 >The Star Spot</a
               >.
@@ -373,21 +420,21 @@
               At the moment,
               <a
                 href="https://www.amazon.ca/Homo-Deus-Brief-History-Tomorrow/dp/0062464310"
-                class="link-colour"
+                class="link-colour link-colour-purple"
                 target="_blank"
                 >this</a
               >
               is my favourite book,
               <a
                 href="https://www.newyorker.com/culture/richard-brody/greta-gerwigs-exquisite-flawed-lady-bird"
-                class="link-colour"
+                class="link-colour link-colour-purple"
                 target="_blank"
                 >this</a
               >
               is my favourite movie, and
               <a
                 href="https://www.youtube.com/watch?v=JGL-eQAAxGs"
-                class="link-colour"
+                class="link-colour link-colour-purple"
                 target="_blank"
                 >this</a
               >
@@ -399,36 +446,38 @@
         <!-- Contact -->
         <div class="row my-5 py-5 mx-auto">
           <div class="col text-center">
-            <h3 style="color: indigo;">
-              Say Hello!
-            </h3>
+            <h3 style="color: indigo">Say Hello!</h3>
             <p>
+              Want a website?<br />
               Need a good recipe for bread?<br />
-              Want to talk tech?<br />
               Just want to chat? <br />
               Feel free to reach out!
             </p>
 
-            <div class="icon-container">
+            <div class="icon-container justify-content-space-evenly">
               <a
-                class="icon-link black-icon"
+                class="icon-link black-icon red-icon"
                 href="mailto:dunja.tomic@uwaterloo.ca?subject=Hello"
                 target="_blank"
               >
                 <i class="far fa-envelope fa-2x"></i>
               </a>
-              <a class="icon-link black-icon" href="resume.pdf" target="_blank">
+              <a
+                class="icon-link black-icon orange-icon"
+                href="CV.pdf"
+                target="_blank"
+              >
                 <i class="fas fa-file-alt fa-2x"></i>
               </a>
               <a
-                class="icon-link black-icon"
+                class="icon-link black-icon green-icon"
                 href="https://www.linkedin.com/in/dunja-tomic/"
                 target="_blank"
               >
                 <i class="fab fa-linkedin fa-2x"></i>
               </a>
               <a
-                class="icon-link black-icon"
+                class="icon-link black-icon blue-icon"
                 href="https://github.com/dunja-tomic"
                 target="_blank"
               >
@@ -440,11 +489,9 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer style="background-color: rgb(220, 220, 220);">
+    <footer style="background-color: rgb(220, 220, 220)">
       <div class="text-center py-3">
-        <p>
-          Made with &#128571; & &#9749;
-        </p>
+        <p>Made with &#10084;&#65039; & &#9749;</p>
         <p>
           © 2020 Copyright Dunja Tomic
           <br />
